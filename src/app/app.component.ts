@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 declare let google: any;
-
 declare global {
   interface Window { google: any; }
 }
@@ -21,9 +20,9 @@ export class AppComponent {
 
 
   addScript () {
-    let script = document.createElement('script');
-    script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-    script.onload = () => this.translate()
+    const script = document.createElement('script');
+    script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    script.onload = () => this.translate();
     document.body.appendChild(script);
   }
 
@@ -42,7 +41,6 @@ export class AppComponent {
     }, 500);
 
   }
-}
 }
 
 
