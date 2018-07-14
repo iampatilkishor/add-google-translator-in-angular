@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  top: 0px !important;
+}
+.goog-te-banner-frame.skiptranslate{
+  display: none;
+  visibility: hidden;
+}
+
+.goog-te-gadget {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
